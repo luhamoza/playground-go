@@ -27,10 +27,10 @@ func (m MongodbNumberStorer) Put(number int) error {
 func interfaces() {
 
 	apiServer := ApiServer{numberStore: MongodbNumberStorer{}}
-	exampleN, err := apiServer.numberStore.GetAll()
+	example, err := apiServer.numberStore.GetAll()
 	if err != nil {
 		fmt.Println("These some error")
 		return
 	}
-	fmt.Println(exampleN)
+	fmt.Println(example)
 }
