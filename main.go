@@ -1,7 +1,11 @@
 package main
 
-import "playground/play"
+import (
+	"playground/enums"
+	"playground/play"
+)
 
 func main() {
 	play.Play()
+	enums.Enums()
 }
