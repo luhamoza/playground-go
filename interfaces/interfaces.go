@@ -24,7 +24,7 @@ func (m MongodbNumberStorer) Put(number int) error {
 	return nil
 }
 
-func interfaces() {
+func Interfaces() {
 
 	apiServer := ApiServer{numberStore: MongodbNumberStorer{}}
 	example, err := apiServer.numberStore.GetAll()
