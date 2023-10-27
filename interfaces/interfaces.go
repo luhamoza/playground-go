@@ -36,6 +36,7 @@ func (p PostgresNumberStorer) Put(number int) error {
 }
 
 func Interfaces() {
+	
 	//mongodb
 	apiServer := ApiServer{numberStore: MongodbNumberStorer{}}
 	example, err := apiServer.numberStore.GetAll()
