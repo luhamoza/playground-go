@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"playground/enums"
 	"playground/functions"
+	"playground/generics"
 	"playground/interfaces"
 	"playground/play"
 	"playground/types"
@@ -33,4 +34,9 @@ func main() {
 	fmt.Println("Interfaces2:")
 	interfaces.Interface2()
 	fmt.Println()
+
+	fmt.Println("Generics:")
+	generics.Generics()
+	fmt.Println()
+
 }
