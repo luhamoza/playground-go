@@ -5,6 +5,7 @@ import (
 	"playground/enums"
 	"playground/interfaces"
 	"playground/play"
+	"playground/types"
 )
 
 func main() {
@@ -18,5 +19,9 @@ func main() {
 
 	fmt.Println("Interfaces:")
 	interfaces.Interfaces()
+	fmt.Println()
+
+	fmt.Println("Types:")
+	types.Types()
 	fmt.Println()
 }
