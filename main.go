@@ -7,6 +7,7 @@ import (
 	"playground/generics"
 	"playground/interfaces"
 	"playground/play"
+	"playground/pointers"
 	"playground/types"
 )
 
@@ -39,4 +40,12 @@ func main() {
 	generics.Generics()
 	fmt.Println()
 
+	fmt.Println("Pointers:")
+	pointers.Pointer()
+	fmt.Println("Pointers2:")
+	fmt.Println()
+
+	fmt.Println("Pointers3:")
+	pointers.Pointer3()
+	fmt.Println()
 }
