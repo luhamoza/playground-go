@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"playground/enums"
+	"playground/functions"
 	"playground/interfaces"
 	"playground/play"
 	"playground/types"
@@ -23,5 +24,13 @@ func main() {
 
 	fmt.Println("Types:")
 	types.Types()
+	fmt.Println()
+
+	fmt.Println("Functions:")
+	functions.Functions()
+	fmt.Println()
+
+	fmt.Println("Interfaces2:")
+	interfaces.Interface2()
 	fmt.Println()
 }
