@@ -8,6 +8,7 @@ import (
 	"playground/interfaces"
 	"playground/play"
 	"playground/pointers"
+	"playground/test"
 	"playground/types"
 )
 
@@ -47,5 +48,9 @@ func main() {
 
 	fmt.Println("Pointers3:")
 	pointers.Pointer3()
+	fmt.Println()
+
+	fmt.Println("Test:")
+	test.Example()
 	fmt.Println()
 }
