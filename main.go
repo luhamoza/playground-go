@@ -5,6 +5,7 @@ import (
 	"playground/enums"
 	"playground/functions"
 	"playground/generics"
+	"playground/goroutines"
 	"playground/interfaces"
 	"playground/play"
 	"playground/pointers"
@@ -53,4 +54,17 @@ func main() {
 	fmt.Println("Test:")
 	test.Example()
 	fmt.Println()
+
+	fmt.Println("Goroutines:")
+	goroutines.Goroutines()
+	fmt.Println()
+
+	fmt.Println("Channel:")
+	goroutines.Channel()
+	fmt.Println()
+
+	fmt.Println("Channel 2:")
+	goroutines.Channel2()
+	fmt.Println()
+
 }

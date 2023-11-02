@@ -3,4 +3,4 @@ build:
 run: build
 	@./example
 git:
-	@git add . && git commit -m "feat: learning" && git push
+	@del example && git add . && git commit -m "feat: learning" && git push
