@@ -16,6 +16,7 @@ import (
 func main() {
 	fmt.Println("Functions:")
 	play.Play()
+	play.RunTime()
 	fmt.Println()
 
 	fmt.Println("Enums:")
