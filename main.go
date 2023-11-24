@@ -9,6 +9,7 @@ import (
 	"playground/interfaces"
 	"playground/play"
 	"playground/pointers"
+	"playground/structsNmethods"
 	"playground/test"
 	"playground/types"
 )
@@ -35,8 +36,16 @@ func main() {
 	functions.Functions()
 	fmt.Println()
 
+	fmt.Println("Structs: ")
+	structsNmethods.Structs()
+	fmt.Println()
+
 	fmt.Println("Interfaces2:")
 	interfaces.Interface2()
+	fmt.Println()
+
+	fmt.Println("Interfaces3:")
+	interfaces.Interfaces3()
 	fmt.Println()
 
 	fmt.Println("Generics:")
@@ -58,6 +67,10 @@ func main() {
 
 	fmt.Println("Goroutines:")
 	goroutines.Goroutines()
+	fmt.Println()
+
+	fmt.Println("Goroutines 2:")
+	goroutines.GoRoutines2()
 	fmt.Println()
 
 	fmt.Println("Channel:")

@@ -1,4 +1,4 @@
-package structs
+package structsNmethods
 
 import "fmt"
 
@@ -17,8 +17,19 @@ type Project struct {
 	tech    []string
 }
 
+func (p *Person) Print() {
+	fmt.Printf("Name: %s\n", p.name)
+	fmt.Printf("Age: %d\n", p.age)
+	fmt.Printf("Job: %s\n", p.job)
+}
+
+func (p *Person) ModifyAge(age int) int {
+	age += 10
+	return age
+}
+
 func Structs() {
-	person := Person{
+	person := &Person{
 		name:      "John",
 		age:       23,
 		job:       "Engineer",
@@ -30,5 +41,8 @@ func Structs() {
 			tech:    []string{"Go, PostgresSQL, CSS"},
 		},
 	}
-	fmt.Printf("%+v\n", person)
+	person.Print()
+	person.age = person.ModifyAge(person.age)
+	fmt.Println("New Age")
+	person.Print()
 }
